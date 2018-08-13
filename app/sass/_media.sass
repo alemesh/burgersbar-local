@@ -4,9 +4,40 @@
 
 
 
+@media only screen and (max-width : 1800px)
+    .second-section
+      .items
+        .item
+          .wrap-img-2
+            width: 40%
+            img
+              max-width: none
+              width: 100%
+
+
+@media only screen and (max-width : 1650px)
+    .second-section
+      .items
+        .item
+          height: 360px
+          .wrap-img-1
+            width: 40%
+            img
+              max-width: none
+              width: 100%
+          a
+            font-size: 50px
+          .item-link-3
+            .wrap-img
+              img
+                max-width: 175px
+
 
 @media only screen and (max-width : 1400px)
     .header
+      .invite-him
+        width: 265px
+        height: 70px
       .slider-header
         .slick-slider
           .slick-next
@@ -15,13 +46,72 @@
             right: 1000px
         .slides
           .slide
-            height: 675px
+            //height: 675px
+            height: 100vh
+    .second-section
+      .items
+        .item
+          a
+            font-size: 40px
+          .wrap-text-1
+            img
+              width: 60px
+              height: 25px
+              bottom: -35px
+          .item-link-3
+            .wrap-img
+              img
+                max-width: 140px
+    .third-section
+      min-height: 510px
+      h3
+        font-size: 110px
+      p
+        font-size: 35px
+      .wrap-block
+        .wrap-text
+          p
+            font-size: 58px
+      .wrap-block
+        .wrap-img
+          width: 130px
+      .wrap-button
+        a
+          font-size: 42px
+          &:hover
+            font-size: 40px
+
+    .fourtch-section
+      min-height: 470px
+      h3
+        font-size: 110px
+      p
+        font-size: 60px
+        line-height: 1.2
+      .wrap-button
+        a
+          font-size: 43px
+          &:hover
+            font-size: 41px
+
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
     header
       padding-top: 49px
+      .nav-section
+        .nav-menu-block
+          .nav
+            margin: 0 -14px
+            li
+              padding: 0 14px
+        .logo-block
+          .wrap-logo
+            width: 240px
+            height: auto
+        .social-block
+          margin-right: 20px
     .header
       .slider-header
         .slick-slider
@@ -32,11 +122,106 @@
         .slides
           .slide
             height: 570px
+      .invite-him
+        top: 290px
+    .second-section
+      .items
+        .item
+          height: 250px
+          a
+            font-size: 35px
+          .wrap-text-2
+            width: 60%
+          .wrap-text-1
+            img
+              width: 50px
+              height: 22px
+              bottom: -33px
+    .third-section
+      min-height: 430px
+      h3
+        font-size: 90px
+        margin-top: 30px
+      p
+        font-size: 30px
+      .wrap-block
+        .wrap-text
+          p
+            font-size: 48px
+        .wrap-img
+          width: 100px
+      .wrap-button
+        a
+          font-size: 38px
+          &:hover
+            font-size: 36px
+
+    .fourtch-section
+      min-height: 420px
+      h3
+        font-size: 100px
+      p
+        font-size: 53px
+      .wrap-button
+        a
+          font-size: 40px
+          &:hover
+            font-size: 38px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+    header
+      padding-top: 30px
+      .nav-section
+        justify-content: flex-end
+        .wrap-logo-mobile
+          display: flex
+          justify-content: center
+          margin-bottom: 30px
+        .wrap-nav-menu
+          display: none
+          position: fixed
+          top: 0
+          left: 0
+          padding: 80px 0 50px
+          //right: 0
+          z-index: 2
+          //max-width: 100%
+          width: 100%
+          margin: 0 auto
+          color: white
+          background-color: #fcaf17
+          //min-height: 465px
+          height: 100vh
+          flex-direction: column
+          justify-content: flex-start
+        .nav-menu-block
+          //order: 1
+          .nav
+            flex-direction: column
+            li
+              margin-bottom: 10px
+            .yellow-color
+              a
+                color: black
+        .social-block
+          margin-right: 0
+          margin-top: 30px
+          .items
+            a
+              &:hover
+                color: #000
+        .nav-menu-block
+          .nav
+            a
+              &:hover
+                color: black
+
+
+
     .header
+      margin-top: -80px
       .slider-header
         .slick-slider
           .slick-next
@@ -46,6 +231,42 @@
         .slides
           .slide
             height: 450px
+      .invite-him
+        width: 230px
+        height: 60px
+        font-size: 42px
+    .second-section
+      .items
+        .item
+          height: 210px
+          a
+            font-size: 30px
+          .wrap-img-2
+            width: 35%
+          .wrap-text-2
+            width: 65%
+          .item-link-3
+            .wrap-img
+              img
+                width: 95px
+    .third-section
+      background-position: left 35% bottom 50%
+
+    .fourtch-section
+      min-height: 360px
+      h3
+        font-size: 80px
+      p
+        font-size: 40px
+      .wrap-button
+        a
+          font-size: 36px
+          &:hover
+            font-size: 34px
+
+
+
+
 
 
 /* Small Devices, Tablets */
@@ -60,6 +281,40 @@
         .slides
           .slide
             height: 400px
+      .invite-him
+        width: 200px
+        font-size: 36px
+        top: 260px
+    .second-section
+      .items
+        justify-content: flex-end
+        .item
+          width: 50%
+    .third-section
+      background-position: center
+      min-height: 365px
+      h3
+        font-size: 73px
+      p
+        font-size: 20px
+      .wrap-block
+        .wrap-text
+          p
+            font-size: 37px
+        .wrap-img
+          width: 85px
+      .wrap-button
+        a
+          font-size: 34px
+          &:hover
+            font-size: 32px
+
+    .fourtch-section
+      background-position: right 20% bottom 50%
+      .left-block
+        width: 63%
+      h3
+        font-size: 75px
 
 
 
@@ -75,12 +330,40 @@
         .slides
           .slide
             height: 375px
+    .second-section
+      .items
+        .item
+          a
+            font-size: 26px
+
+    .fourtch-section
+      min-height: 310px
+      background-position: right 28% bottom 50%
+      .left-block
+        width: 70%
+      h3
+        font-size: 65px
+      p
+        font-size: 33px
+      .wrap-button
+        a
+          font-size: 34px
+          &:hover
+            font-size: 32px
 
 
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+    header
+      .nav-section
+        .logo-block
+          .wrap-logo
+            width: 210px
+        .wrap-logo-mobile
+          width: 210px
+          margin: 0 auto 30px
     .header
       .slider-header
         .slick-slider
@@ -91,6 +374,52 @@
         .slides
           .slide
             height: 375px
+      .invite-him
+        width: 160px
+        height: 50px
+        font-size: 28px
+    .second-section
+      .items
+        .item
+          width: 100%
+          a
+            font-size: 32px
+          .wrap-text-1, .wrap-text-2
+            align-items: center
+          .item-link-3
+            .wrap-img
+              img
+                width: 120px
+          .wrap-img-1
+            width: 33%
+
+    .third-section
+      min-height: 315px
+      h3
+        font-size: 56px
+      p
+        font-size: 16px
+      .wrap-block
+        .wrap-text
+          p
+            font-size: 28px
+        .wrap-img
+          width: 60px
+      .wrap-button
+        a
+          font-size: 30px
+          &:hover
+            font-size: 28px
+
+    .fourtch-section
+      min-height: 280px
+      .left-block
+        width: 80%
+      h3
+        font-size: 60px
+        margin-top: 20px
+      p
+        font-size: 30px
 
 
 /* Custom, iPhone Retina */
@@ -105,6 +434,17 @@
         .slides
           .slide
             height: 310px
+
+    .third-section
+      min-height: 300px
+      h3
+        font-size: 48px
+      p
+        font-size: 13px
+
+    .fourtch-section
+      .left-block
+        width: 100%
 
 
 /*==========  Mobile First  ==========*/

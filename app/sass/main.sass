@@ -66,6 +66,7 @@ img
 	display: inline-block
 	max-width: 100%
 	height: auto
+	transition: .3s
 
 h1, h2, h3, h4, p, span
 	margin: 0 auto
@@ -95,6 +96,11 @@ header
 		display: flex
 		justify-content: space-between
 		align-items: center
+		.wrap-nav-menu
+			display: flex
+			justify-content: space-between
+			align-items: center
+
 		.nav-menu-block
 			.nav
 				display: flex
@@ -122,11 +128,15 @@ header
 					line-height: 1.2
 					color: white
 					text-decoration: none
+					transition: .2s
+					&:hover
+						color: #fcaf17
 				.yellow-color
 					a
 						color: #fcaf17
 						font-family: "mikhmoret-regular-aaa"
 		.social-block
+			margin-right: 50px
 			.items
 				display: flex
 				justify-content: center
@@ -155,12 +165,12 @@ header
 	margin-top: -115px
 	.invite-him
 		direction: rtl
-		position: absolute
+		position: fixed
 		top: 225px
 		right: 0
 		width: 285px
 		height: 80px
-		z-index: 999
+		z-index: 2
 		display: flex
 		justify-content: flex-end
 		align-items: center
@@ -195,7 +205,8 @@ header
 				background-size: cover
 				background-position: center
 				width: 100%
-				height: 834px
+				//height: 834px
+				height: 100vh
 
 		.slick-slider
 			//direction: ltr
@@ -257,7 +268,7 @@ header
 				//border-left: 5px solid #00b3cb
 				//border-top: 5px solid #00b3cb
 				background: transparent
-				z-index: 2
+				z-index: 1
 
 
 			.slick-next
@@ -275,7 +286,7 @@ header
 					border-top: 3px solid white
 					//z-index: 99999
 					transform: translateY(-50%) translateX(-50%) rotate(130deg)
-					z-index: 2
+					z-index: 1
 			.slick-prev
 				right: 1200px
 				&:after
@@ -291,7 +302,7 @@ header
 					border-top: 3px solid white
 					//z-index: 99999
 					transform: translateY(-50%) translateX(-50%) rotate(-45deg)
-					z-index: 2
+					z-index: 1
 
 			.slick-arrow.slick-hidden
 				display: none
@@ -299,6 +310,297 @@ header
 			.slick-next:before, .slick-prev:before
 				content: none
 
+.second-section
+	width: 100%
+	.items
+		direction: rtl
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		.item
+			width: 33.333%
+			height: 480px
+			list-style: none
+			a
+				font-family: "mikhmoret-regular-aaa"
+				font-size: 60px
+				line-height: 1.2
+				color: #231f20
+				text-decoration: none
+				background-size: cover
+				background-position: center
+				width: 100%
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+			.item-link-3
+				justify-content: flex-end
+				align-items: flex-start
+				&:hover
+					.wrap-img
+						img
+							transform: rotate(-8.5deg)
+				.wrap-img
+					display: flex
+					justify-content: flex-end
+					align-items: flex-end
+					margin: 0
+					img
+						transition: .3s
+						max-width: 220px
+						margin-top: 25px
+						margin-left: 15px
+			.wrap-img
+				display: flex
+				justify-content: center
+				align-items: center
+			.item-link-1
+				&:hover
+					.wrap-img
+						img
+							transform: rotate(12.5deg)
+					.wrapeer
+						img
+							transform: translateX(-100%)
+			.wrap-text-1
+				width: 45%
+				display: flex
+				justify-content: flex-start
+				flex-direction: column
+				align-items: flex-end
+				margin-left: 20px
+				span
+					margin: 0
+					line-height: .9
+				.wrapeer
+					display: flex
+					justify-content: flex-start
+					flex-direction: column
+					align-items: flex-start
+					position: relative
+				img
+					transition: ease .3s
+					position: absolute
+					bottom: -50px
+					right: 0
+					width: 78px
+					height: 33px
+					z-index: 1
+			.wrap-img-1
+				width: 55%
+				display: flex
+				justify-content: flex-start
+				padding-right: 20px
+				img
+					max-width: 253px
+			.item-link-2
+				&:hover
+					.wrap-img
+						img
+							transform: rotate(360deg)
+			.wrap-img-2
+				width: 50%
+				display: flex
+				justify-content: flex-start
+				margin-left: 25px
+				img
+					max-width: 314px
+			.wrap-text-2
+				width: 50%
+				display: flex
+				justify-content: flex-start
+				flex-direction: column
+				align-items: flex-end
+				padding-left: 20px
+				span
+					margin: 0
+				.wrapeer
+					display: flex
+					justify-content: flex-start
+					flex-direction: column
+					align-items: flex-start
+
+
+
+//=============== Togle mnu ======
+
+.toggle-mnu
+	//background: #666666
+	display: block
+	position: absolute
+	right: 26px
+	top: 7px
+	//width: 48px
+	//height: 48px
+	text-align: center
+	line-height: 48px
+	z-index: 9
+	cursor: pointer
+
+
+
+.toggle-mnu
+	display: block
+	width: 40px
+	height: 28px
+	margin: 22px auto 0
+	position: absolute
+	right: 15px
+	top: 27px
+
+.toggle-mnu
+	position: fixed
+	right: 19px
+	top: 20px
+
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle-mnu span:after
+	top: 9px
+
+.toggle-mnu span
+	position: relative
+	display: block
+	z-index: 2222
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	//width: 100%
+	width: 27px
+	height: 3px
+	background-color: white
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+/* on activation */
+.toggle-mnu.on span
+	background-color: transparent
+
+.toggle-mnu.on span:before
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-mnu.on span:after
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu
+	opacity: 1
+	visibility: visible
+.toggle-mnu
+	&:after
+		content: ''
+		//background: #217776
+		width: 50px
+		height: 50px
+		position: absolute
+		top: -24px
+		left: -5px
+.toggle-mnu.on
+	&:after
+		//background-color: #00525d
+		width: 45px
+		height: 45px
+		top: -22px
+		left: -3px
+.toggle-mnu.background-button
+	&:after
+		background-color: #fcaf17
+		width: 45px
+		height: 45px
+		top: -22px
+		left: -3px
+		z-index: 9
+
+
+.third-section
+	direction: rtl
+	width: 100%
+	min-height: 584px
+	background-size: cover
+	//background-position: center
+	h3
+		font-family: "mikhmoret-regular-aaa"
+		font-size: 130px
+		line-height: 1.23
+		color: #fcaf17
+		margin-top: 40px
+	p
+		font-family: "mikhmoret-regular-aaa"
+		font-size: 45px
+		color: rgb(35, 31, 32)
+		line-height: 1.418
+	.wrap-block
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+		.wrap-img
+			width: 150px
+			margin-left: 20px
+		.wrap-text
+			p
+				font-family: "mikhmoret-regular-aaa"
+				font-size: 70px
+				color: rgb(35, 31, 32)
+				line-height: 1.157
+	.wrap-button
+		margin-top: 20px
+		margin-bottom: 50px
+		a
+			font-family: "mikhmoret-bold-aaa"
+			font-size: 50px
+			color: rgb(0, 0, 0)
+			font-weight: bold
+			line-height: 1.28
+			text-decoration: none
+			border: 2px solid black
+			padding: 5px
+			transition: .2s
+			&:hover
+				font-size: 48px
+
+.fourtch-section
+	width: 100%
+	min-height: 607px
+	background-size: cover
+	background-position: right
+	.left-block
+		width: 50%
+		direction: rtl
+	h3
+		font-family: "mikhmoret-regular-aaa"
+		font-size: 130px
+		color: rgb(252, 175, 23)
+		line-height: 1.23
+		margin-top: 40px
+	p
+		font-family: "mikhmoret-regular-aaa"
+		font-size: 70px
+		color: rgb(255, 255, 255)
+		line-height: 1.349
+	.wrap-button
+		margin-top: 20px
+		margin-bottom: 50px
+		a
+			font-family: "mikhmoret-bold-aaa"
+			font-size: 50px
+			color: white
+			font-weight: bold
+			line-height: 1.28
+			text-decoration: none
+			border: 2px solid white
+			padding: 5px
+			transition: .2s
+			&:hover
+				font-size: 48px
 
 
 
