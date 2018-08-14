@@ -92,6 +92,9 @@ header
 	position: relative
 	//margin-bottom: -35px
 	padding-top: 80px
+	.main-holder
+		//overflow: hidden
+		overflow: inherit
 	.nav-section
 		display: flex
 		justify-content: space-between
@@ -100,7 +103,6 @@ header
 			display: flex
 			justify-content: space-between
 			align-items: center
-
 		.nav-menu-block
 			.nav
 				display: flex
@@ -135,6 +137,29 @@ header
 					a
 						color: #fcaf17
 						font-family: "mikhmoret-regular-aaa"
+			.nav
+				li
+					position: relative
+					ul
+						//display: block
+						//visibility: hidden
+						overflow: hidden
+						transform: translateY(-15px)
+						transition: all .4s ease-in-out
+						background: black
+						position: absolute
+						top: 40px
+						left: 0
+						height: 0
+						//visibility: hidden
+					&:hover
+						ul
+							//visibility: visible
+							transform: translateY(0)
+							//display: flex
+							//flex-direction: column
+							height: 300%
+
 		.social-block
 			margin-right: 50px
 			.items
@@ -562,7 +587,7 @@ header
 			line-height: 1.28
 			text-decoration: none
 			border: 2px solid black
-			padding: 5px
+			padding: 5px 10px
 			transition: .2s
 			&:hover
 				font-size: 48px
@@ -602,10 +627,244 @@ header
 			&:hover
 				font-size: 48px
 
+.fifth-section
+	h3
+		margin-top: 90px
+
+.instagram-section
+	direction: rtl
+	width: 100%
+	background: #f7f5f5
+	padding-top: 40px
+	.wrap-title
+		display: flex
+		justify-content: center
+		margin-bottom: 50px
+		a
+			text-decoration: none
+			font-family: "mikhmoret-regular-aaa"
+			font-size: 77.35px
+			color: rgb(0, 0, 0)
+			line-height: 1
+			display: flex
+			justify-content: center
+			align-items: center
+			text-transform: uppercase
+		img
+			width: 89px
+			height: 58px
+			margin-right: 15px
+
+	.instagram-pics
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 -6px
+		li
+			width: 16.666%
+			padding: 0 6px
+			margin-bottom: 12px
+			//height: 310px
+			list-style: none
+			img
+				transition: .3s
+				width: 100%
+				height: 100%
+			a
+				display: block
+				overflow: hidden
+				&:hover
+					img
+						transform: scale(1.1)
+
+
+.food-truck-section
+	background: white
+	direction: rtl
+	margin-top: -12px
+	padding-top: 170px
+	min-height: 980px
+	position: relative
+	.background-lier
+		background-size: cover
+		width: 330px
+		height: 276px
+		position: absolute
+		bottom: 0
+		right: 40px
+	.main-holder
+		max-width: 1640px
+	.wrap-sections
+		display: flex
+		justify-content: space-between
+	.right-block
+		padding-right: 120px
+		padding-top: 40px
+		h3
+			color: rgb(252, 175, 23)
+			font-family: "mikhmoret-regular-aaa"
+			font-size: 130.38px
+			line-height: .9
+			text-align: center
+		h4
+			font-family: "mikhmoret-regular-aaa"
+			font-size: 114.38px
+			color: rgb(252, 175, 23)
+			line-height: .9
+			margin: 0 25px 0 0
+		p
+			font-family: "mikhmoret-regular-aaa"
+			font-size: 45px
+			color: black
+			line-height: 1.2
+			text-align: center
+			b
+				font-family: "mikhmoret-bold-aaa"
+		.wrapper
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 50px
+			img
+				width: 124px
+				height: 85px
+		.wrap-button
+			margin-top: 40px
+			margin-bottom: 50px
+			text-align: center
+			a
+				font-family: "mikhmoret-bold-aaa"
+				font-size: 50px
+				color: rgb(0, 0, 0)
+				font-weight: bold
+				line-height: 1.28
+				text-decoration: none
+				border: 2px solid black
+				padding: 5px 10px
+				transition: .2s
+				&:hover
+					font-size: 48px
+	.left-block
+		.wrap-img
+			max-width: 800px
+
+footer
+	direction: rtl
+	width: 100%
+	background-size: cover
+	min-height: 400px
+	background-position: center
+	border-top: 35px solid rgb(252, 175, 23)
+	padding-top: 45px
+	.main-holder
+		max-width: 1920px
+		padding: 0 120px
+	.wrap-footer
+		display: flex
+		justify-content: space-between
+	.left-block
+		.items
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 -9px
+			.item
+				list-style: none
+				padding: 0 9px
+				max-width: 100px
+				transition: .3s
+				&:hover
+					a
+						img
+							transform: scale(.9)
+		.wrap-button
+			margin-top: 20px
+			a
+				font-family: "mikhmoret-regular-aaa"
+				font-size: 35px
+				line-height: 1.2
+				color: black
+				background: rgb(252, 175, 23)
+				text-decoration: none
+				padding: 5px 15px 5px 30px
+				text-transform: uppercase
+				transition: .3s
+				&:hover
+					background: #c38305
+
+				span
+					position: relative
+					&:after
+						content: ''
+						background-image: url(../img/star-lier.png)
+						background-size: cover
+						width: 16px
+						height: 15px
+						position: absolute
+						top: 50%
+						left: -17px
+						transform: translateY(-50%)
+
+
+@-webkit-keyframes swing
+	15%
+		-webkit-transform: translateX(9px)
+		transform: translateX(9px)
+
+	30%
+		-webkit-transform: translateX(-9px)
+		transform: translateX(-9px)
+
+	40%
+		-webkit-transform: translateX(6px)
+		transform: translateX(6px)
+
+	50%
+		-webkit-transform: translateX(-6px)
+		transform: translateX(-6px)
+
+	65%
+		-webkit-transform: translateX(3px)
+		transform: translateX(3px)
+
+	100%
+		-webkit-transform: translateX(0)
+		transform: translateX(0)
+
+
+@keyframes swing
+	15%
+		-webkit-transform: translateX(9px)
+		transform: translateX(9px)
+
+	30%
+		-webkit-transform: translateX(-9px)
+		transform: translateX(-9px)
+
+	40%
+		-webkit-transform: translateX(6px)
+		transform: translateX(6px)
+
+	50%
+		-webkit-transform: translateX(-6px)
+		transform: translateX(-6px)
+
+	65%
+		-webkit-transform: translateX(3px)
+		transform: translateX(3px)
+
+	100%
+		-webkit-transform: translateX(0)
+		transform: translateX(0)
 
 
 
-
+.swing:hover
+	-webkit-animation: swing 0.6s ease
+	animation: swing 0.6s ease
+	-webkit-animation-iteration-count: 1
+	animation-iteration-count: 1
 
 
 
