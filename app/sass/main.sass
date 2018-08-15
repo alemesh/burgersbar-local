@@ -114,6 +114,25 @@ header
 					padding: 0 17px
 					list-style: none
 					position: relative
+				.has-submenu
+					position: relative
+					&:after
+						content: ""
+						//display: block
+						position: absolute
+						width: 0
+						height: 0
+						border: 5px inset
+						border-color: white transparent transparent
+						border-top-style: solid
+						border-bottom-width: 0
+						left: 0
+						top: 50%
+						transform: translateY(-50%)
+						transition: .3s
+					&:hover
+						&:after
+							border-color: #fcaf17 transparent transparent
 				.current-menu-item
 					&:after
 						content: ''
@@ -124,6 +143,11 @@ header
 						width: 60%
 						height: 3px
 						border-bottom: 3px solid white
+						transition: .3s
+					&:hover
+						&:after
+							border-bottom: 3px solid #fcaf17
+
 				a
 					font-family: "mikhmoret-light-aaa"
 					font-size: 28.2px
@@ -141,24 +165,21 @@ header
 				li
 					position: relative
 					ul
-						//display: block
-						//visibility: hidden
-						overflow: hidden
-						transform: translateY(-15px)
-						transition: all .4s ease-in-out
-						background: black
 						position: absolute
-						top: 40px
 						left: 0
-						height: 0
-						//visibility: hidden
+						top: 100%
+						background: rgba(0, 0, 0, .8)
+						z-index: 5
+						padding: 10px 0
+						visibility: hidden
+						opacity: 0
+						transform: scale(.8)
+						transition: .3s ease-in-out
 					&:hover
 						ul
-							//visibility: visible
-							transform: translateY(0)
-							//display: flex
-							//flex-direction: column
-							height: 300%
+							visibility: visible
+							opacity: 1
+							transform: scale(1)
 
 		.social-block
 			margin-right: 50px
@@ -372,6 +393,7 @@ header
 					justify-content: flex-end
 					align-items: flex-end
 					margin: 0
+					width: 100%
 					img
 						transition: .3s
 						max-width: 220px

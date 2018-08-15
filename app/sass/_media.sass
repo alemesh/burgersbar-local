@@ -304,6 +304,7 @@
           justify-content: center
           margin-bottom: 30px
         .wrap-nav-menu
+          overflow: auto
           display: none
           position: fixed
           top: 0
@@ -326,6 +327,22 @@
             flex-direction: column
             li
               margin-bottom: 10px
+              text-align: center
+              ul
+                position: relative
+                //left: 0
+                //top: 100%
+                background: rgba(0, 0, 0, .5)
+                z-index: 5
+                //padding: 10px 0
+                visibility: visible
+                opacity: 1
+                transform: scale(1)
+                transition: .3s ease-in-out
+            .has-submenu
+              &:after
+                top: 15px
+
             .yellow-color
               a
                 color: black
@@ -605,6 +622,12 @@
                 width: 120px
           .wrap-img-1
             width: 33%
+        .order-1
+          order: 3
+        .order-2
+          order: 2
+        .order-3
+          order: 1
 
     .third-section
       min-height: 315px
@@ -629,7 +652,7 @@
       .left-block
         width: 80%
       h3
-        font-size: 60px
+        font-size: 58px
         margin-top: 20px
       p
         font-size: 30px
