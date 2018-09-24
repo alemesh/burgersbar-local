@@ -185,8 +185,23 @@
       .main-holder
         padding: 0 60px
 
+    .about-page
+      .we-believe-in-sections
+        padding-top: 80px
+        padding-bottom: 60px
+        h3
+          font-size: 90px
 
-
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1260px)
+    .about-page
+      .our-story-sections
+        .text-block
+          .wrap-block
+            &:after
+              background-image: url(../img/butger.png)
+              width: 129px
+              height: 108px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -438,6 +453,23 @@
             width: 47px
             height: 27px
 
+    .about-page
+      .header
+        margin-top: 0
+      .we-believe-in-sections
+        padding-bottom: 50px
+        padding-top: 50px
+        h3
+          font-size: 70px
+          margin-bottom: 30px
+        .wrap-items
+          .items
+            .item
+              h4
+                font-size: 32px
+              p
+                font-size: 24px
+
 
 
 
@@ -542,6 +574,55 @@
           .item
             max-width: 90px
 
+    .about-page
+      .third-section
+        min-height: 370px
+        h3
+          font-size: 60px
+          text-align: center
+        .wrap-block
+          justify-content: center
+          .wrap-text
+            p
+              font-size: 30px
+      .our-story-sections
+        padding-top: 50px
+        padding-bottom: 36px
+        h3
+          font-size: 75px
+          text-align: center
+        .text-block
+          .wrap-block
+            min-width: 390px
+            &:after
+              width: 108px
+              height: 90px
+              bottom: 4px
+              right: -140px
+
+          .wrap-digits
+            font-size: 70px
+            min-width: 160px
+            padding-left: 15px
+            p
+              padding-left: 15px
+          .wrap-text
+            font-size: 22px
+        .style-right
+          .wrap-block
+            &:after
+              right: auto
+              left: -140px
+      .we-believe-in-sections
+        h3
+          font-size: 50px
+        .wrap-items
+          //flex-direction: column
+          flex-wrap: wrap
+          .items
+            width: 100%
+
+
 
 
 
@@ -579,6 +660,30 @@
           font-size: 34px
           &:hover
             font-size: 32px
+
+    .about-page
+      .third-section
+        h3
+          font-size: 50px
+        .wrap-block
+          flex-direction: column
+          .wrap-img
+            width: 80px
+            margin-left: 0
+            margin-bottom: 30px
+          .wrap-text
+            padding-right: 0
+            margin-right: 0
+            border-right: none
+            text-align: center
+      .our-story-sections
+        h3
+          font-size: 60px
+          margin-bottom: 30px
+        .text-block
+          .wrap-block
+            &:after
+              content: none
 
 
 
@@ -706,6 +811,42 @@
         .wrap-img
           width: 70px
 
+    .about-page
+      .third-section
+        h3
+          margin-top: 40px
+          font-size: 45px
+        .wrap-block
+          .wrap-text
+            p
+              font-size: 25px
+      .our-story-sections
+        padding-bottom: 15px
+        padding-top: 35px
+        .text-block
+          .wrap-block
+            min-width: 315px
+          .wrap-digits
+            font-size: 60px
+            min-width: 130px
+          .wrap-text
+            font-size: 18px
+      .we-believe-in-sections
+        padding-bottom: 40px
+        .wrap-items
+          .items
+            .item
+              .wrap-img
+                width: 70px
+                img
+                  max-height: 50px
+              .wrap-text
+                max-width: 250px
+              h4
+                font-size: 26px
+                .about-page .we-believe-in-sections .wrap-items .items .item .wrap-img img
+
+
 
 
 /* Custom, iPhone Retina */
@@ -740,6 +881,22 @@
       .right-block
         p
           font-size: 22px
+
+    .about-page
+      .third-section
+        .wrap-block
+          .wrap-text
+            p
+              font-size: 21px
+      .our-story-sections
+        .text-block
+          .wrap-block
+            min-width: 270px
+          .wrap-digits
+            font-size: 45px
+            min-width: 110px
+          .wrap-text
+            font-size: 16px
 
 
 /*==========  Mobile First  ==========*/
