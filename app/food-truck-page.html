@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Burgersbar</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/ico.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/ico.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/ico.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/ico.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+</head>
+
+<body class="main-page food-truck-page">
+<header>
+    <div class="main-holder">
+        <div class="nav-section">
+            <div class="logo-block">
+                <div class="wrap-logo">
+                    <a href="/">
+                        <img src="img/logo-header.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="wrap-nav-menu main-mnu">
+                <div class="nav-menu-block">
+                    <div class="wrap-logo-mobile hidden-md hidden-lg">
+                        <a href="#">
+                            <img src="img/logo-header.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">תפריט</a>
+                        </li>
+                        <li>
+                            <a href="about-page.html">אודות</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">סניפים</a>
+                            <ul>
+                                <li>
+                                    <a href="">סניפים</a>
+                                </li>
+                                <li>
+                                    <a href="">סניפים</a>
+                                </li>
+                                <li>
+                                    <a href="">סניפים</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="current-menu-item" href="food-truck-page.html">אירועים</a>
+                        </li>
+                        <li>
+                            <a href="franchisee-page.html">זכינות</a>
+                        </li>
+                        <li>
+                            <a href="jobs-page.html">דרושים</a>
+                        </li>
+                        <li>
+                            <a href="contactus-page.html">צור קשר</a>
+                        </li>
+                        <li class="yellow-color">
+                            <a href="#">הזמנות</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-block">
+                    <ul class="items">
+                        <li>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/BurgersBarIL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/burgers_bar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="togle-wrap">
+                <span class="toggle-mnu hidden-md hidden-lg"><span></span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="header" >
+    <img src="img/185f516f-6090-477e-8de1-86c57ab444c4.png" alt="">
+</div>
+
+<div class="food-truck-form">
+    <div class="main-holder">
+        <div class="form-hold">
+            <h3>השאירו פרטים וניצור עמכם קשר בהקדם</h3>
+            <form action="form_processing.php" class="form form-validation" method="post">
+                <div class="form-row-wrap">
+                    <div class="form-row order-1">
+                        <input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם">
+                    </div>
+                    <div class="form-row order-2">
+                        <input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טל" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+                    </div>
+                    <div class="form-row order-3">
+                        <input name="email" class="form-control" type="email" placeholder="דוא”ל">
+                    </div>
+                    <div class="form-row order-4">
+                        <input name="company" class="form-control" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="חברה">
+                    </div>
+                    <div class="form-row wrap-btn">
+                        <input type="submit" class="btn" value="שלח">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="third-section">
+    <div class="car-lier scroll-section"></div>
+    <div class="main-holder">
+        <h3>food truck</h3>
+        <h3>עד אליכם!</h3>
+        <p>בעברית <b>"משאיות האוכל"</b>, קונספט עולמי שתפס תאוצה גם בישראל ומציע לכם </p>
+        <p>"אוכל רחוב" בסגנונות שונים.</p>
+        <p>ה"פוד טראקס" שברשותנו מגיעים עם הנעה של 4X4, המאפשרת גישה כמעט לכל מקום.</p>
+        <p>חוף הים, מדבר, קרחת יער, אולמות אירועים או על רחבת בניין משרדים.</p>
+    </div>
+</div>
+<div class="how-it-works-section" style="background-image: url(img/franchisee/MHO_2248-2.png)">
+    <div class="holder-lier"></div>
+    <div class="main-holder">
+        <h3>איך זה עובד?</h3>
+        <ul class="items">
+            <li class="item">
+                <div class="wrapper">
+                    <div class="wrap-img">
+                        <img src="img/food-track/img-1.png" alt="">
+                    </div>
+                </div>
+                <div class="wrap-text">
+                    <p>השאירו לנו פרטים </p>
+                    <p>ואנו נצור עמכם קשר</p>
+                </div>
+            </li>
+            <li class="item">
+                <div class="wrapper">
+                    <div class="wrap-img">
+                        <img src="img/food-track/img-2.png" alt="">
+                    </div>
+                </div>
+                <div class="wrap-text">
+                    <p>סוגרים תאריך </p>
+                    <p>ותפריט משגע</p>
+                </div>
+            </li>
+            <li class="item">
+                <div class="wrapper">
+                    <div class="wrap-img">
+                        <img src="img/food-track/img-3.png" alt="">
+                    </div>
+                </div>
+                <div class="wrap-text">
+                    <p>אנו דואגים </p>
+                    <p>להכל</p>
+                </div>
+            </li>
+            <li class="item">
+                <div class="wrapper">
+                    <div class="wrap-img">
+                        <img src="img/food-track/img-4.png" alt="">
+                    </div>
+                </div>
+                <div class="wrap-text">
+                    <p>הפוד טראק</p>
+                    <p>אצלכם באירוע!</p>
+                </div>
+            </li>
+        </ul>
+        <div class="wrap-social">
+            <p><a href="https://www.facebook.com/BurgersBarIL/" target="_blank">  <i class="fab fa-facebook-f"></i></a> תעשו לנו לייק</p>
+        </div>
+    </div>
+</div>
+<div class="instagram-section">
+    <div class="wrap-title">
+        <a href="https://www.instagram.com/burgers_bar/" target="_blank">
+            <h3>INSTAGRAM</h3>
+            <img src="img/instagram-logo.png" alt="">
+        </a>
+    </div>
+    <ul class="instagram-pics instagram-size-thumbnail">
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-1.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-2.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-3.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-4.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-5.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-6.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-7.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-8.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-9.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-10.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-11.png" alt="alt" title="title">
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                <img src="img/instagram-img-12.png" alt="alt" title="title">
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="we-are-told-that-section">
+    <div class="main-holder">
+        <h3>מספרים עלינו ש.. ></h3>
+        <ul class="items">
+            <li class="item">
+                <a href="#" class="wrap-image">
+                    <div class="image" style="background-image: url(img/food-track/img-6.png)"></div>
+                </a>
+                <div class="wrap-text">
+                    <p><b>אבי</b> - ראשל״צ</p>
+                    <p>״ היה אחלה שירות, האוכל ממש טעים, כולם היו מרוצים...״</p>
+                </div>
+            </li>
+            <li class="item">
+                <a href="#" class="wrap-image">
+                    <div class="image" style="background-image: url(img/food-track/img-7.png)"></div>
+                </a>
+                <div class="wrap-text">
+                    <p><b>מרים</b> - ירושלים </p>
+                    <p>״ היה אחלה שירות, האוכל ממש טעים, כולם היו מרוצים...״</p>
+                </div>
+            </li>
+            <li class="item">
+                <a href="#" class="wrap-image">
+                    <div class="image" style="background-image: url(img/food-track/img-8.png)"></div>
+                </a>
+                <div class="wrap-text">
+                    <p><b>נועה</b> - פתח תקווה </p>
+                    <p>״ היה אחלה שירות, האוכל ממש טעים, כולם היו מרוצים...״</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="food-truck-for-work-section">
+    <div class="car-lier scroll-section"></div>
+    <div class="main-holder">
+        <h3>food truck לעבודה ></h3>
+        <div class="wrap-text">
+            <p>מעוניינים לפנק את העובדים?</p>
+            <p>מארגנים הפקה ייחודית ומחפשים דרך מקורית</p>
+            <p>ומעניינת שתעשיר לכם את התפריט?</p>
+            <div class="wrap-button">
+                <a href="#">רוצים לשמוע עוד ></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer style="background-image: url(img/background-footer.png)">
+    <div class="main-holder">
+        <div class="wrap-footer">
+            <div class="left-block">
+                <ul class="items">
+                    <li class="item">
+                        <a href="#" target="_blank" class="wrap-img">
+                            <img src="img/item-footer-1.png" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank" class="wrap-img">
+                            <img src="img/item-footer-2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank" class="wrap-img">
+                            <img src="img/item-footer-3.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="wrap-button">
+                    <a href="tel:2242*"><span>להזמנות: 2242</span></a>
+                </div>
+            </div>
+            <div class="right-block">
+                <a href="#" class="wrap-img">
+                    <img src="img/logo-footer.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
