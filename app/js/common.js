@@ -149,6 +149,44 @@ $(function() {
     });
 //==========================================
 
+//========= branch page active trigger ============
+    $(".wrap-title").click(function() {
+        $(this).parents('.item').toggleClass("active");
+        // $(".active .wrap-content-section").slideToggle();
+        // y = 320;
+
+        // $('.active').animate();
+        // $('.active').animate({ "height": y }, 500 );
+
+
+            // $( ".active" ).animate({
+            //     opacity: 0.25,
+            //     height: "toggle"
+            // }, 5000, function() {
+            //     // Animation complete.
+            // });
+
+
+
+        // return false;
+    });
+
+
+//============ more buttons =============
+    $( document ).ready(function () {
+        $(".moreBox").slice(0, 4).show();
+        if ($(".blogBox:hidden").length != 0) {
+            $("#loadMore").show();
+        }
+        $("#loadMore").on('click', function (e) {
+            e.preventDefault();
+            $(".moreBox:hidden").slice(0, 5).slideDown();
+            if ($(".moreBox:hidden").length == 0) {
+                $("#loadMore").fadeOut('slow');
+            }
+        });
+    });
+
 });
 
 

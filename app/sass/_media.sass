@@ -405,6 +405,21 @@
           width: 190px
           height: 160px
 
+    .branches-page
+      .branches-section
+        .result-block
+          .items
+            .item
+              .wrap-content-section
+                min-height: 185px
+                .wrap-text-block
+                  font-size: 22px
+                  .buttons-block
+                    a
+                      font-size: 20px
+                      min-width: 100px
+                      height: 35px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -712,6 +727,37 @@
             .item
               font-size: 15px
 
+    .branches-page
+      .branches-section
+        h3
+          font-size: 55px
+        .result-block
+          h4
+            font-size: 26px
+          .items
+            .item
+              .wrap-title
+                min-height: 55px
+                &:after
+                  width: 17px
+                  height: 17px
+                p
+                  font-size: 30px
+                .wrap-img
+                  width: 40px
+                  height: auto
+              .wrap-content-section
+                min-height: 140px
+                .wrap-text-block
+                  padding: 15px
+                  font-size: 18px
+                  .buttons-block
+                    a
+                      font-size: 16px
+                      height: 30px
+                      min-width: 85px
+
+
 
 
 
@@ -948,19 +994,42 @@
       .jobs-section
         .jobs-table
           overflow-x: scroll
-          direction: ltr
+          //direction: ltr
           .items
-            direction: rtl
-            //overflow: hidden
-            //overflow: scroll
-
+            //direction: rtl
             min-width: 615px
+
+    .branches-page
+      .branches-section
+        .wrap-button
+          margin-top: 30px
+          a
+            font-size: 26px
+        .result-block
+          .items
             .item
-
-
-
-
-
+              .wrap-content-section
+                flex-wrap: wrap
+                justify-content: flex-start
+                min-height: 310px
+                .map-block
+                  width: 100%
+                  height: 140px
+                .wrap-text-block
+                  width: 45%
+      .search-block
+        .form-hold
+          .form-row
+            width: 100%
+        .custom-select-wrapper
+          .custom-select.opened
+            .custom-options
+              z-index: 1
+      .abet-block
+        .letters
+          flex-wrap: wrap
+          .letter
+            width: 39px
 
 
 
@@ -1068,6 +1137,22 @@
         .left-block
           width: 100%
           padding-right: 0
+
+    .branches-page
+      .branches-section
+        .result-block
+          .items
+            .item
+              .wrap-title
+                p
+                  font-size: 22px
+              .wrap-content-section
+                min-height: 529px
+                .image-block
+                  width: 100%
+                  height: 220px
+                .wrap-text-block
+                  width: 100%
 
 
 
@@ -1305,6 +1390,27 @@
           font-size: 45px
         p
           font-size: 22px
+        .car-lier
+          display: none
+
+    .branches-page
+      .branches-section
+        .wrap-button
+          a
+            font-size: 22px
+        .result-block
+          .items
+            .item
+              .wrap-title
+                &:after
+                  content: none
+                p
+                  font-size: 18px
+              .wrap-content-section
+                min-height: 449px
+                .image-block
+                  height: 140px
+
 
 
 

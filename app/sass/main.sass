@@ -84,6 +84,20 @@ ul
 	margin: 0 auto
 	padding: 0 20px
 	position: relative
+.wrap-button
+	margin-top: 50px
+	text-align: center
+	a
+		border: 2px solid black
+		display: inline-block
+		padding: 0 10px
+		font-family: "mikhmoret-bold-aaa"
+		font-size: 32px
+		text-decoration: none
+		color: black
+		transition: .3s
+		&:hover
+			transform: scale(.9)
 
 //============================================
 header
@@ -1919,6 +1933,7 @@ footer
 		padding: 50px  0
 		direction: rtl
 		position: relative
+		overflow: hidden
 		.car-lier
 			transition: .5s
 			position: absolute
@@ -1980,8 +1995,8 @@ footer
 						text-align: right
 						background: transparent
 						color: black
-				span
-					//border: 1px solid gray
+						&:hover
+							transform: scale(1)
 				.col-1
 					width: 8%
 					font-family: "mikhmoret-bold-aaa"
@@ -2009,9 +2024,14 @@ footer
 					padding: 5px
 					width: 13%
 					text-align: center
+					transition: .3s
+					display: inline-block
+					&:hover
+						transform: scale(.95)
 					a
 						color: white
 						text-decoration: none
+
 		.wrap-button
 			margin-top: 50px
 			text-align: center
@@ -2026,6 +2046,288 @@ footer
 				transition: .3s
 				&:hover
 					transform: scale(.9)
+
+//=========== branches page ===========================
+.branches-page
+	direction: rtl
+	.branches-section
+		padding: 50px 0 40px
+		h3
+			font-size: 68px
+
+		.result-block
+			h4
+				font-size: 29.7px
+				font-family: "mikhmoret-regular-aaa"
+				line-height: 1
+				color: black
+				margin-bottom: 15px
+			.items
+				display: flex
+				flex-direction: column
+				.item
+					list-style: none
+					display: flex
+					flex-direction: column
+					border: 2px solid #fcaf17
+					margin-bottom: 15px
+					//overflow: hidden
+					position: relative
+					.wrap-title
+						background: #fcaf17
+						display: flex
+						justify-content: flex-start
+						min-height: 85px
+						align-items: center
+						padding: 0 20px
+						position: relative
+						cursor: pointer
+						&:after
+							content: ''
+							position: absolute
+							display: block
+							width: 20px
+							height: 20px
+							top: 50%
+							left: 40px
+							transform: translateY(-50%) rotate(45deg)
+							transition: all .4s ease-in-out
+							//transform-origin: 50% 0
+							margin-top: -3px
+							border-bottom: 3px solid white
+							border-right: 3px solid white
+						.wrap-img
+							width: 46px
+							height: 39px
+							margin-left: 20px
+						p
+							font-family: "mikhmoret-regular-aaa"
+							font-size: 40px
+							line-height: 1
+							color: white
+							margin: 0
+					.wrap-content-section
+						display: flex
+						justify-content: space-between
+						min-height: 230px
+						transform: scale(0)
+						position: absolute
+						height: 0
+						top: 0
+						left: 0
+						z-index: -1
+						transition: all .8s ease
+						.image-block
+							width: 250px
+							height: auto
+							background-size: cover
+						.wrap-text-block
+							font-family: "mikhmoret-regular-aaa"
+							font-size: 25px
+							line-height: 1.2
+							color: black
+							display: flex
+							flex-wrap: wrap
+							padding: 20px 25px
+							.right-column, .left-column
+								width: 50%
+							.buttons-block
+								display: flex
+								margin-top: 10px
+								margin-bottom: 15px
+								a
+									text-decoration: none
+									color: white
+									display: flex
+									align-items: center
+									justify-content: center
+									min-width: 120px
+									height: 40px
+									font-family: "mikhmoret-bold-aaa"
+									line-height: 1.2
+									font-size: 25px
+									background: black
+									margin-left: 10px
+									transition: .3s
+									&:hover
+										transform: scale(.95)
+						.map-block
+							//background: #666666
+							background-image: url(../img/branches/img-map.png)
+							background-size: cover
+							background-position: center
+							height: auto
+							width: 450px
+				.active
+					//overflow: hidden
+					//height: 230px
+					.wrap-content-section
+						transform: scale(1)
+						position: relative
+						z-index: 1
+	//===================== custom select ================================
+	.custom-select-wrapper
+		position: relative
+		display: inline-block
+		user-select: none
+		width: 100%
+
+		.custom-select-wrapper select
+			display: none
+
+		.custom-select
+			position: relative
+			display: inline-block
+			//background: white
+			padding: 3px 10px 0
+
+
+		.custom-select-trigger
+			position: relative
+			display: block
+			font-weight: 300
+			color: black
+			cursor: pointer
+		//margin-top: 5px
+
+		.custom-select-trigger:after
+			position: absolute
+			display: block
+			content: ''
+			width: 10px
+			height: 10px
+			top: 50%
+			left: 15px
+			margin-top: -3px
+			border-bottom: 2px solid black
+			border-right: 2px solid black
+			transform: rotate(45deg) translateY(-50%)
+			transition: all .4s ease-in-out
+			transform-origin: 50% 0
+
+		.custom-select.opened .custom-select-trigger:after
+			margin-top: 3px
+			transform: rotate(-135deg) translateY(-50%)
+			z-index: 999999
+
+		.custom-options
+			position: absolute
+			display: block
+			top: 100%
+			left: 0
+			right: 0
+			min-width: 100%
+			margin: 15px 0
+			border: 1px solid #b5b5b5
+			border-radius: 4px
+			box-sizing: border-box
+			box-shadow: 0 2px 1px rgba(0,0,0,.07)
+			background: #fff
+			transition: all .4s ease-in-out
+
+			opacity: 0
+			visibility: hidden
+			pointer-events: none
+			transform: translateY(-15px)
+
+		.custom-select.opened .custom-options
+			opacity: 1
+			visibility: visible
+			pointer-events: all
+			transform: translateY(0)
+			z-index: 1
+
+		.custom-options:before
+			position: absolute
+			display: block
+			content: ''
+			bottom: 100%
+			left: 25px
+			width: 7px
+			height: 7px
+			margin-bottom: -4px
+			border-top: 1px solid #b5b5b5
+			border-left: 1px solid #b5b5b5
+			background: #fff
+			transform: rotate(45deg)
+			transition: all .4s ease-in-out
+
+		.option-hover:before
+			background: #f9f9f9
+
+		.custom-option
+			position: relative
+			display: block
+			padding: 0 22px
+			border-bottom: 1px solid #b5b5b5
+			font-size: 18px
+			font-weight: 600
+			color: black
+			line-height: 47px
+			cursor: pointer
+			transition: all .4s ease-in-out
+
+		.custom-option:first-of-type
+			border-radius: 4px 4px 0 0
+
+		.custom-option:last-of-type
+			border-bottom: 0
+			border-radius: 0 0 4px 4px
+
+		.custom-option:hover,
+		.custom-option.selection
+			background: #f9f9f9
+
+
+	//===================== finish custom select ================================
+	.search-block
+		.form-hold
+			max-width: 780px
+			min-height: auto
+			padding: 25px 0 15px
+			.form-row
+				width: 20%
+			.order-1
+				width: 40%
+	.abet-block
+		max-width: 780px
+		margin-bottom: 30px
+		.letters
+			min-height: 45px
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 2px solid black
+			.letter
+				list-style: none
+				font-family: "mikhmoret-regular-aaa"
+				font-size: 29.7px
+				line-height: 1
+				color: black
+				position: relative
+				cursor: pointer
+				width: 4.54%
+				display: flex
+				&:after
+					content: ''
+					position: absolute
+					width: 2px
+					height: 23px
+					top: 50%
+					left: -1px
+					transform: translateY(-50%)
+					background: black
+				&:last-of-type
+					&:after
+						content: none
+
+
+
+
+
+
+
+
 
 
 

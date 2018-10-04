@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Burgersbar</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/ico.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/ico.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/ico.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/ico.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+</head>
+
+<body class="main-page branches-page">
+<header>
+    <div class="main-holder">
+        <div class="nav-section">
+            <div class="logo-block">
+                <div class="wrap-logo">
+                    <a href="/">
+                        <img src="img/logo-header.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="wrap-nav-menu main-mnu">
+                <div class="nav-menu-block">
+                    <div class="wrap-logo-mobile hidden-md hidden-lg">
+                        <a href="#">
+                            <img src="img/logo-header.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">תפריט</a>
+                        </li>
+                        <li>
+                            <a href="about-page.html">אודות</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="branches-page.html">סניפים</a>
+                            <ul>
+                                <li>
+                                    <a href="">סניפים</a>
+                                </li>
+                                <li>
+                                    <a href="">סניפים</a>
+                                </li>
+                                <li>
+                                    <a href="">סניפים</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="food-truck-page.html">אירועים</a>
+                        </li>
+                        <li>
+                            <a href="franchisee-page.html">זכינות</a>
+                        </li>
+                        <li>
+                            <a href="jobs-page.html">דרושים</a>
+                        </li>
+                        <li>
+                            <a href="contactus-page.html">צור קשר</a>
+                        </li>
+                        <li class="yellow-color">
+                            <a href="#">הזמנות</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-block">
+                    <ul class="items">
+                        <li>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/BurgersBarIL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/burgers_bar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="togle-wrap">
+                <span class="toggle-mnu hidden-md hidden-lg"><span></span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="header" >
+    <img src="img/branches/MHO_2305.png" alt="">
+</div>
+
+<div class="branches-section">
+    <div class="main-holder">
+        <h3>סניפי הרשת ></h3>
+        <div class="search-block">
+            <div class="form-hold">
+                <form action="form_processing.php" class="form form-validation" method="post">
+                    <div class="form-row-wrap">
+                        <div class="form-row order-1">
+                            <input name="name" class="form-control"  type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="שם / כתובת / עיר">
+                        </div>
+                        <div class="form-row">
+                            <select required name="sources-1" id="sources-1" class="form-control custom-select sources" placeholder="כשרות">
+                                <option value="שירות לקוחות">שירות לקוחות</option>
+                                <option value="שירות לקוחות">שירות לקוחות</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <select required name="sources-2" id="sources-2" class="form-control custom-select sources" placeholder="משלוחים">
+                                <option value="שירות לקוחות">שירות לקוחות</option>
+                                <option value="שירות לקוחות">שירות לקוחות</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <select required name="sources-3" id="sources-3" class="form-control custom-select sources" placeholder="איזור">
+                                <option value="שירות לקוחות">שירות לקוחות</option>
+                                <option value="שירות לקוחות">שירות לקוחות</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="abet-block">
+                <ul class="letters">
+                    <li class="letter">
+                        <span>א</span>
+                    </li>
+                    <li class="letter">
+                        <span>ב</span>
+                    </li>
+                    <li class="letter">
+                        <span>ג</span>
+                    </li>
+                    <li class="letter">
+                        <span>ד</span>
+                    </li>
+                    <li class="letter">
+                        <span>ה</span>
+                    </li>
+                    <li class="letter">
+                        <span>ו</span>
+                    </li>
+                    <li class="letter">
+                        <span>ז</span>
+                    </li>
+                    <li class="letter">
+                        <span>ח</span>
+                    </li>
+                    <li class="letter">
+                        <span>ט</span>
+                    </li>
+                    <li class="letter">
+                        <span>י</span>
+                    </li>
+                    <li class="letter">
+                        <span>כ</span>
+                    </li>
+                    <li class="letter">
+                        <span>ל</span>
+                    </li>
+                    <li class="letter">
+                        <span>מ</span>
+                    </li>
+                    <li class="letter">
+                        <span>נ</span>
+                    </li>
+                    <li class="letter">
+                        <span>ס</span>
+                    </li>
+                    <li class="letter">
+                        <span>ע</span>
+                    </li>
+                    <li class="letter">
+                        <span>פ</span>
+                    </li>
+                    <li class="letter">
+                        <span>צ</span>
+                    </li>
+                    <li class="letter">
+                        <span>ק</span>
+                    </li>
+                    <li class="letter">
+                        <span>ר</span>
+                    </li>
+                    <li class="letter">
+                        <span>ש</span>
+                    </li>
+                    <li class="letter">
+                        <span>ת</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="result-block">
+            <h4>נמצאו 5 סניפים:</h4>
+            <ul class="items">
+                <li class="item blogBox">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+                <li class="item blogBox moreBox" style="display: none;">
+                    <div class="wrap-title">
+                        <div class="wrap-img">
+                            <img src="img/branches/img-burger.png" alt="">
+                        </div>
+                        <p>קניון הדר  |  פייר קניג 26, תלפיות, ירושלים</p>
+                    </div>
+                    <div class="wrap-content-section">
+                        <div class="image-block" style="background-image: url(img/branches/fbd687ce.png)"></div>
+                        <div class="wrap-text-block">
+                            <div class="right-column">
+                                <p><b>קניון הדר</b></p>
+                                <p>פייר קניג 26</p>
+                                <p>תלפיות, ירושלים</p>
+                                <p>02-6726660</p>
+                            </div>
+                            <div class="left-column">
+                                <p><b>א-ה:</b> 10:00-24:00</p>
+                                <p>ו: 10:00-15:00</p>
+                                <p>כשרות: מהדרין</p>
+                                <p>משלוחים: כן</p>
+                            </div>
+                            <div class="buttons-block">
+                                <a href="#" class="button"><span>למשלוחים ></span></a>
+                                <a href="#" class="button"><span>לתפריט ></span></a>
+                            </div>
+                        </div>
+                        <div class="map-block"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="wrap-button" id="loadMore">
+            <a href="#">לרשימת הסניפים המלאה ></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer style="background-image: url(img/background-footer.png)">
+    <div class="main-holder">
+        <div class="wrap-footer">
+            <div class="left-block">
+                <ul class="items">
+                    <li class="item">
+                        <a href="#" target="_blank" class="wrap-img">
+                            <img src="img/item-footer-1.png" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank" class="wrap-img">
+                            <img src="img/item-footer-2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank" class="wrap-img">
+                            <img src="img/item-footer-3.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="wrap-button">
+                    <a href="tel:2242*"><span>להזמנות: 2242</span></a>
+                </div>
+            </div>
+            <div class="right-block">
+                <a href="#" class="wrap-img">
+                    <img src="img/logo-footer.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
