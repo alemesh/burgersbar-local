@@ -1784,7 +1784,6 @@ footer
 			font-weight: 300
 			color: black
 			cursor: pointer
-		//margin-top: 5px
 
 		.custom-select-trigger:after
 			position: absolute
@@ -2185,9 +2184,11 @@ footer
 		.custom-select-trigger
 			position: relative
 			display: block
+			height: inherit
 			font-weight: 300
 			color: black
 			cursor: pointer
+			overflow: hidden
 		//margin-top: 5px
 
 		.custom-select-trigger:after
@@ -2197,7 +2198,7 @@ footer
 			width: 10px
 			height: 10px
 			top: 50%
-			left: 15px
+			left: 3px
 			margin-top: -3px
 			border-bottom: 2px solid black
 			border-right: 2px solid black
@@ -2258,7 +2259,7 @@ footer
 		.custom-option
 			position: relative
 			display: block
-			padding: 0 22px
+			padding: 0 6px
 			border-bottom: 1px solid #b5b5b5
 			font-size: 18px
 			font-weight: 600
@@ -2321,9 +2322,144 @@ footer
 					&:after
 						content: none
 
+//================= menu page ==============
 
+.menu-page
+	direction: rtl
+	.menu-section
+		padding: 80px 0
+		.wrap-sections
+			display: flex
+		.right-side
+			width: 300px
+			h4
+				font-family: "mikhmoret-regular-aaa"
+				font-size: 45px
+				line-height: 1.2
+				color: black
+			.current-item
+				font-family: "mikhmoret-regular-aaa"
+				line-height: 1.2
+				color: #fcaf17
+				font-size: 45px
+				position: relative
+				padding-right: 50px
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					right: 0
+					transform: translateY(-50%)
+					background-image: url(../img/menu/img-2.png)
+					background-size: cover
+					width: 44px
+					height: 37px
+				&:before
+					content: ''
+					position: absolute
+					top: 50%
+					right: -20px
+					transform: translateY(-50%)
+					width: 4px
+					height: 37px
+					background: #fcaf17
+			.items
+				display: flex
+				flex-direction: column
+				.item
+					list-style: none
+					font-family: "mikhmoret-regular-aaa"
+					font-size: 33px
+					line-height: 1.2
+					color: black
+					letter-spacing: 1px
+					span
+						transition: .2s
+						cursor: pointer
+						&:hover
+							color: #fcaf17
+				.active
+					color: #fcaf17
+					span
+						position: relative
+						&:after
+							content: ''
+							position: absolute
+							top: 50%
+							left: -15px
+							transform: translateY(-50%) rotate(45deg)
+							width: 13px
+							height: 13px
+							border-left: 3px solid #fcaf17
+							border-bottom: 3px solid #fcaf17
 
+		.left-side
+			.items
+				display: flex
+				flex-wrap: wrap
+				margin: 0 -20px
+				.item
+					width: 33.333%
+					padding: 0 20px
+					list-style: none
+					display: flex
+					flex-direction: column
+					align-items: center
+					margin-bottom: 60px
+			.wrap-img
+				height: 179px
+				display: flex
+				justify-content: center
+				align-items: center
 
+				img
+					height: inherit
+			.wrap-text
+				text-align: center
+				h4
+					font-family: "mikhmoret-regular-aaa"
+					font-size: 37px
+					line-height: 1
+					color: #2bb673
+					margin-bottom: 8px
+					margin-top: 5px
+				.color-1
+					color: #2bb673
+				.color-2
+					color: #ed1c24
+				.color-3
+					color: #00aeef
+				.color-4
+					color: #fcaf17
+				.color-5
+					color: #8b5e3b
+				p
+					font-family: "mikhmoret-regular-aaa"
+					font-size: 19px
+					line-height: 1
+					color: black
+					margin-bottom: 10px
+				.wrap-costs
+					display: flex
+					justify-content: center
+					.right-block, .left-block
+						width: 50%
+						display: flex
+						flex-direction: column
+					.right-block
+						position: relative
+						border-left: 2px solid black
+					p
+						font-family: "mikhmoret-regular-aaa"
+						line-height: .8
+						color: black
+						margin-bottom: 0
+					.weight
+						font-size: 26px
+						margin-bottom: 7px
+					.cost
+						font-size: 43px
+						line-height: .6
 
 
 
