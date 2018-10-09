@@ -62,6 +62,56 @@ $(function() {
             ]
         });
     })(jQuery);
+    ////slider for category in menu pages
+    function slyck_category() {
+        $('.menu-category-slider').slick({
+            dots: false,
+            // infinite: true,
+            rtl: true,
+            speed: 300,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            // centerMode: true,
+            prevArrow: '<span class="slick-prev"></span>',
+            nextArrow: '<span class="slick-next"></span>',
+            // variableWidth: true,
+            // autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                }
+            ]
+        });
+    };
+
+    $(document).ready(function(){
+        if($(window).width() < 992) {
+            slyck_category();
+        } else {
+            $('.menu-category-slider').slick('unslick');
+        }
+        $(window).resize(function(){
+            if($(window).width() < 992) {
+                slyck_category();
+            } else {
+                $('.menu-category-slider').slick('unslick');
+            }
+        });
+    });
 
 //scroll sections animation for food-truck-page
     $(window).scroll(function() {
