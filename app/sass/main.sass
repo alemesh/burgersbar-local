@@ -1525,7 +1525,8 @@ footer
 			font-size: 77px
 	.food-truck-for-work-section
 		direction: rtl
-		background: #fcaf17
+		//background: #fcaf17
+		background: #d7d7d7
 		padding: 60px 0 80px
 		position: relative
 		.car-lier
@@ -2068,12 +2069,19 @@ footer
 					list-style: none
 					display: flex
 					flex-direction: column
-					border: 2px solid #fcaf17
+					//border: 2px solid #fcaf17
+					border: 2px solid #080807
 					margin-bottom: 15px
 					//overflow: hidden
 					position: relative
+					transition: .3s
+					&:hover
+						border: 2px solid #fcaf17
+						.wrap-title
+							background: #fcaf17
 					.wrap-title
-						background: #fcaf17
+						//background: #fcaf17
+						background: #080807
 						display: flex
 						justify-content: flex-start
 						min-height: 85px
@@ -2081,6 +2089,7 @@ footer
 						padding: 0 20px
 						position: relative
 						cursor: pointer
+						transition: .3s
 						&:after
 							content: ''
 							position: absolute
@@ -2149,7 +2158,8 @@ footer
 									margin-left: 10px
 									transition: .3s
 									&:hover
-										transform: scale(.95)
+										//transform: scale(.95)
+										background: #fcaf17
 						.map-block
 							//background: #666666
 							background-image: url(../img/branches/img-map.png)
