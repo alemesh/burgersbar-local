@@ -228,8 +228,8 @@ header
 		position: fixed
 		top: 225px
 		right: 0
-		width: 285px
-		height: 80px
+		width: 200px
+		height: 60px
 		z-index: 2
 		display: flex
 		justify-content: flex-end
@@ -237,7 +237,7 @@ header
 		background: #fcaf17
 		//border-radius: 20px 0 0 20px
 		font-family: "mikhmoret-bold-aaa"
-		font-size: 52px
+		font-size: 45px
 		line-height: 1.2
 		color: black
 		text-decoration: none
@@ -477,6 +477,7 @@ header
 				padding-left: 20px
 				span
 					margin: 0
+					line-height: 1
 				.wrapeer
 					display: flex
 					justify-content: flex-start
@@ -617,7 +618,7 @@ header
 		margin-bottom: 50px
 		text-align: right
 		p
-			font-family: "mikhmoret-bold-aaa"
+			font-family: "mikhmoret-regular-aaa"
 			font-size: 40px
 			color: rgb(0, 0, 0)
 			font-weight: bold
@@ -633,6 +634,10 @@ header
 	min-height: 607px
 	background-size: cover
 	background-position: right
+	.main-holder
+		min-height: inherit
+		display: flex
+		align-items: center
 	.left-block
 		width: 50%
 		direction: rtl
@@ -651,22 +656,17 @@ header
 		margin-top: 20px
 		margin-bottom: 50px
 		text-align: right
-		a
-			font-family: "mikhmoret-bold-aaa"
+		p
+			font-family: "mikhmoret-regular-aaa"
 			font-size: 40px
 			color: white
 			font-weight: bold
 			line-height: 1.28
 			text-decoration: none
-			border: 2px solid white
-			padding: 5px
-			transition: .2s
-			&:hover
-				font-size: 48px
 
 .fifth-section
 	h3
-		margin-top: 90px
+		margin-top: 100px
 
 .instagram-section
 	direction: rtl
@@ -724,6 +724,7 @@ header
 	min-height: 980px
 	position: relative
 	.background-lier
+		display: none
 		background-size: cover
 		width: 330px
 		height: 276px
@@ -738,50 +739,48 @@ header
 	.right-block
 		padding-right: 120px
 		padding-top: 40px
+		align-items: flex-start
 		h3
 			color: rgb(252, 175, 23)
 			font-family: "mikhmoret-regular-aaa"
-			font-size: 130.38px
+			font-size: 100px
 			line-height: .9
-			text-align: center
+			//text-align: center
 		h4
 			font-family: "mikhmoret-regular-aaa"
-			font-size: 114.38px
+			font-size: 87px
 			color: rgb(252, 175, 23)
 			line-height: .9
 			margin: 0 25px 0 0
 		p
 			font-family: "mikhmoret-regular-aaa"
-			font-size: 45px
+			font-size: 40px
 			color: black
 			line-height: 1.2
-			text-align: center
+			text-align: right
+			margin: 0
 			b
 				font-family: "mikhmoret-bold-aaa"
 		.wrapper
 			display: flex
-			justify-content: center
+			justify-content: flex-start
 			align-items: center
 			margin-bottom: 50px
 			img
-				width: 124px
-				height: 85px
+				width: 95px
+				height: 60px
 		.wrap-button
 			margin-top: 40px
 			margin-bottom: 50px
 			text-align: center
-			a
-				font-family: "mikhmoret-bold-aaa"
-				font-size: 50px
+			p
+				font-family: "mikhmoret-regular-aaa"
+				font-size: 40px
 				color: rgb(0, 0, 0)
 				font-weight: bold
 				line-height: 1.28
 				text-decoration: none
-				border: 2px solid black
-				padding: 5px 10px
-				transition: .2s
-				&:hover
-					font-size: 48px
+
 	.left-block
 		.wrap-img
 			max-width: 800px
@@ -815,6 +814,8 @@ footer
 					a
 						img
 							transform: scale(.9)
+				img
+					max-width: 76px
 		.wrap-button
 			margin-top: 20px
 			a
@@ -1542,8 +1543,9 @@ footer
 		.scroll-section
 			left: 0
 		h3
-			color: white
+			//color: white
 			margin-bottom: 50px
+			margin-bottom: 30px
 		.wrap-text
 			font-family: "mikhmoret-regular-aaa"
 			font-size: 35px
@@ -1552,6 +1554,7 @@ footer
 			.wrap-button
 				margin-bottom: 6px
 				margin-top: 30px
+				text-align: right
 			a
 				text-decoration: none
 				color: black
@@ -1882,6 +1885,7 @@ footer
 		padding-bottom: 150px
 		position: relative
 		.car-lier
+			display: none
 			transition: .5s
 			position: absolute
 			bottom: 0
@@ -1936,6 +1940,7 @@ footer
 		position: relative
 		overflow: hidden
 		.car-lier
+			display: none
 			transition: .5s
 			position: absolute
 			bottom: 0
@@ -2393,16 +2398,16 @@ footer
 					color: #fcaf17
 					span
 						position: relative
-						&:after
-							content: ''
-							position: absolute
-							top: 50%
-							left: -15px
-							transform: translateY(-50%) rotate(45deg)
-							width: 13px
-							height: 13px
-							border-left: 3px solid #fcaf17
-							border-bottom: 3px solid #fcaf17
+						//&:after
+						//	content: ''
+						//	position: absolute
+						//	top: 50%
+						//	left: -15px
+						//	transform: translateY(-50%) rotate(45deg)
+						//	width: 13px
+						//	height: 13px
+						//	border-left: 3px solid #fcaf17
+						//	border-bottom: 3px solid #fcaf17
 
 		.left-side
 			.items
@@ -2431,7 +2436,7 @@ footer
 					font-family: "mikhmoret-regular-aaa"
 					font-size: 37px
 					line-height: 1
-					color: #2bb673
+					color: black
 					margin-bottom: 8px
 					margin-top: 5px
 				.color-1
@@ -2471,6 +2476,20 @@ footer
 					.cost
 						font-size: 43px
 						line-height: .6
+	.slick-slider
+		.slick-arrow
+			display: none!important
+		.slick-dots
+			li
+				button
+					&:before
+						content:
+						background: black
+						border-radius: 50%
+						width: 10px
+						height: 10px
+
+
 .single-page
 	.menu-section
 		.left-side

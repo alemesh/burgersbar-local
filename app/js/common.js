@@ -65,7 +65,7 @@ $(function() {
     ////slider for category in menu pages
     function slyck_category() {
         $('.menu-category-slider').slick({
-            dots: false,
+            dots: true,
             // infinite: true,
             rtl: true,
             speed: 300,
@@ -75,7 +75,7 @@ $(function() {
             prevArrow: '<span class="slick-prev"></span>',
             nextArrow: '<span class="slick-next"></span>',
             // variableWidth: true,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 3000,
             responsive: [
                 {
